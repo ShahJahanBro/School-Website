@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+	background-color: #50222D;	
+	color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Header Section */
+.header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #411b24;
+    border-bottom: #c4c300;
+}
+
+.header .title{
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 10px 100px;
+}
+
+.header .title span{
+    color:#c4c300;
+}
+
+.nav ul{
+    display: flex;
+    gap: 50px;
+    margin: 10px 100px;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    color:white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px;    
+}
+
+.nav ul li a:hover{
+    border: 1px solid white;
+}
+
+.about_us{
+    position: relative;
+}
+
+.about_us_info{
+    position: absolute;
+    top:40px;
+    line-height: 40px;
+    padding: 10px;
+    width:150px;
+    background-color: #411b24;
+    display: none;
+}
+
+
+.about_us:hover{
+    .about_us_info{
+        display: block;
+    }
+}
