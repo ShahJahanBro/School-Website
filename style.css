@@ -11,8 +11,7 @@ html{
 body{
 	background-color: #50222D;	
 	color: white;
-  font-family: 'Poppins', sans-serif;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Header Section */
@@ -27,7 +26,7 @@ body{
 
 .header .title{
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: capitalize;
     margin: 10px 100px;
 }
@@ -48,15 +47,16 @@ body{
 
 .nav ul li a{
     color:white;
-    text-transform: capitalize;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.2rem;
-    padding: 10px;    
+    font-size: 1rem;
+    padding: 10px;  
+    transition: border 2s ease;  
+    cursor: pointer;
 }
 
 .nav ul li a:hover{
-    border: 1px solid white;
+    border: 1px solid #c4c300;
 }
 
 .about_us{
@@ -71,11 +71,116 @@ body{
     width:150px;
     background-color: #411b24;
     display: none;
+    transition: color 2s ease;
+    cursor: pointer;
 }
-
 
 .about_us:hover{
     .about_us_info{
         display: block;
     }
 }
+
+.about_us_info a:hover{
+    color:#c4c300
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+}
+
+.icon-container{
+    width: 10px;
+    height: 10px;
+    /* overflow: hidden; */
+    border: 1px solid #c4c300;
+}
+
+.icon-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+
+/* Hero Section */
+.hero{
+    width: 100%;
+    height: 88vh;
+    border: 2px solid #c4c300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero_text{
+    text-align: center;
+    line-height: 80px;
+    
+}
+
+.hero_text h1,h2{
+    letter-spacing: 5px;
+}
+.hero_text span{
+    color: #c4c300;
+}
+
+.hero_text h1{
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.hero_text button{
+    padding: 10px;
+    color: white;
+    background-color: #c4c300;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero_school_info{
+    display: flex;
+    gap: 20px;
+    border: #c4c300 1px solid;
+}
+
+.hero_courses_container{
+     width: 300px;
+    background-color: #c4c300;
+    padding: 20px 0 15px 30px ;
+}
+
+.course_details{
+    display: none;
+}
+
+.hero_info_container{
+    width: 300px;
+    background-color: #c4c300;
+    padding: 20px 0 15px 30px ;
+}
+
+.icon_text_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero_icon{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.hero_icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
